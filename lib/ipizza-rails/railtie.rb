@@ -1,6 +1,8 @@
 require 'ipizza'
 require 'rails'
 
+require 'ipizza-rails/form_helpers'
+
 class Ipizza::Rails::Railtie < ::Rails::Railtie
   
   generators do
@@ -15,5 +17,9 @@ class Ipizza::Rails::Railtie < ::Rails::Railtie
         c.load_from_hash(YAML::load_file(Rails.root.join('config', 'ipizza.yml')).fetch(Rails.env))
       end
     end
+  end
+  
+  initializer 'ipizza-rails.view_helpers' do
+    ActionView::Base.send :include, Ipizza::Rails::FormHelpers
   end
 end
