@@ -18,7 +18,7 @@ development:
     file_cert: seb_test_pub.pem
     file_key: seb_test_priv.pem
     encoding: UTF-8
-    snd_id: sender
+    snd_id: testvpos
 
   nordea:
     auth_service_url: https://netbank.nordea.com/pnbeidtest/eidn.jsp
