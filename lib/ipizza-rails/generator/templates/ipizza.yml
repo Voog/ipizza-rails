@@ -31,6 +31,16 @@ development:
     keyvers: '0001'
     file_key: nordea_test_priv
 
+  krediidipank:
+    service_url: https://i-pank.krediidipank.ee/teller/maksa
+    return_url: http://localhost:3000/krep/return
+    cancel_url: http://localhost:3000/krep/cancel
+    login: dealer
+    file_cert: krediidipank_test_pub.pem
+    file_key: krediidipank_test_priv.pem
+    encoding: UTF-8
+    snd_id: testvpos
+
 test:
   swedbank:
     service_url: https://www.swedbank.ee/banklink
@@ -64,6 +74,16 @@ test:
     keyvers: '0001'
     file_key: nordea_test_priv
 
+  krediidipank:
+    service_url: https://i-pank.krediidipank.ee/teller/maksa
+    return_url: http://test.host/krep/return
+    cancel_url: http://test.host/krep/cancel
+    login: dealer
+    file_cert: krediidipank_test_pub.pem
+    file_key: krediidipank_test_priv.pem
+    encoding: UTF-8
+    snd_id: testvpos
+
 production:
   swedbank:
     service_url: https://www.swedbank.ee/banklink
@@ -96,3 +116,13 @@ production:
     confirm: 'YES'
     keyvers: '0001'
     file_key: nordea_test_priv
+
+  krediidipank:
+    service_url: https://i-pank.krediidipank.ee/teller/maksa
+    return_url: http://myapp.host/krep/return
+    cancel_url: http://myapp.host/krep/cancel
+    login: dealer
+    file_cert: krediidipank_test_pub.pem
+    file_key: krediidipank_test_priv.pem
+    encoding: UTF-8
+    snd_id: testvpos
