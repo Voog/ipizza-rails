@@ -20,4 +20,5 @@ Gem::Specification.new do |s|
   s.add_dependency(%q<ipizza>, ['>= 1.0.0'])
   
   s.add_development_dependency('rspec', ['>= 2.9.0'])
+  s.add_development_dependency('rake')
 end
