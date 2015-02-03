@@ -1,4 +1,25 @@
 development:
+  lhv:
+    service_url: https://lhv.ee/banklink
+    return_url: http://localhost:3000/lhv/return
+    cancel_url: http://localhost:3000/lhv/cancel
+    login: dealer
+    file_cert: seb_test_pub.pem
+    file_key: seb_test_priv.pem
+    encoding: UTF-8
+    snd_id: testvpos
+
+  sampo:
+    service_url: https://www2.danskebank.ee/ibank/pizza/pizza
+    return_url: http://localhost:3000/sampo
+    cancel_url: http://localhost:3000/sampo
+    login: dealer
+    file_cert: seb_test_pub.pem
+    file_key: seb_test_priv.pem
+    key_secret: foobar
+    encoding: UTF-8
+    snd_id: sender
+
   swedbank:
     service_url: https://www.swedbank.ee/banklink
     return_url: http://localhost:3000/swedbank/return
@@ -42,6 +63,27 @@ development:
     snd_id: testvpos
 
 test:
+  lhv:
+    service_url: https://lhv.ee/banklink
+    return_url: http://test.host:3000/lhv/return
+    cancel_url: http://test.host:3000/lhv/cancel
+    login: dealer
+    file_cert: seb_test_pub.pem
+    file_key: seb_test_priv.pem
+    encoding: UTF-8
+    snd_id: testvpos
+
+  sampo:
+    service_url: https://www2.danskebank.ee/ibank/pizza/pizza
+    return_url: http://test.host/sampo
+    cancel_url: http://test.host/sampo
+    login: dealer
+    file_cert: seb_test_pub.pem
+    file_key: seb_test_priv.pem
+    key_secret: foobar
+    encoding: UTF-8
+    snd_id: sender
+
   swedbank:
     service_url: https://www.swedbank.ee/banklink
     return_url: http://test.host/swedbank/return
@@ -85,6 +127,27 @@ test:
     snd_id: testvpos
 
 production:
+  lhv:
+    service_url: https://lhv.ee/banklink
+    return_url: http://myapp.host/lhv/return
+    cancel_url: http://myapp.host/lhv/cancel
+    login: dealer
+    file_cert: seb_test_pub.pem
+    file_key: seb_test_priv.pem
+    encoding: UTF-8
+    snd_id: testvpos
+
+  sampo:
+    service_url: https://www2.danskebank.ee/ibank/pizza/pizza
+    return_url: http://myapp.host/sampo
+    cancel_url: http://myapp.host/sampo
+    login: dealer
+    file_cert: seb_test_pub.pem
+    file_key: seb_test_priv.pem
+    key_secret: foobar
+    encoding: UTF-8
+    snd_id: sender
+
   swedbank:
     service_url: https://www.swedbank.ee/banklink
     return_url: http://myapp.host/swedbank/return
