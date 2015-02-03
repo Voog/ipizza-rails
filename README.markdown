@@ -1,9 +1,11 @@
-Adds iPizza support to Rails 3 applications. Provides rails generators and easy configuration loading.
+Adds iPizza support to Rails 3+ applications. Provides rails generators and easy configuration loading.
+
+Read more about supported providers and configuration options form [ipizza gem hompage](https://github.com/Voog/ipizza).
 
 Installation
 ------------
 
-In your Gemfile add ipizza-rails gem:
+In your `Gemfile` add `ipizza-rails` gem:
 
     gem ipizza-rails
 
