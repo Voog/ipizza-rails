@@ -6,8 +6,8 @@ Gem::Specification.new do |s|
   s.name        = 'ipizza-rails'
   s.version     = Ipizza::Rails::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ['Priit Haamer']
-  s.email       = ['priit@fraktal.ee']
+  s.authors     = ['Priit Haamer', 'Tanel Jakobsoo']
+  s.email       = ['priit@voog.com', 'tanel@voog.com']
   s.homepage    = "https://github.com/Voog/ipizza-rails"
   s.summary     = %q{Adds iPizza support to Rails applications}
   s.description = %q{Helpers to use iPizza inside Rails applications}
