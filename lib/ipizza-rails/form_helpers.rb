@@ -15,6 +15,8 @@ module Ipizza
           Ipizza::Provider::Nordea.new.payment_request(payment)
         when :krediidipank
           Ipizza::Provider::Krediidipank.new.payment_request(payment)
+        when :luminor
+          Ipizza::Provider::Luminor.new.payment_request(payment)
         end
 
         form_tag(request.service_url, options) do
